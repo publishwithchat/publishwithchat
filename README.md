@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<p align="center"><strong>Your website, made by asking.</strong><br>
+<p align="center"><strong>Your website, made by chatting.</strong><br>
 Tell Claude, ChatGPT or Gemini about your business. It builds the site, you check the preview, and it goes online at your own web address.</p>
 
 <p align="center">

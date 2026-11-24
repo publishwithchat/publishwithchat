@@ -5,48 +5,52 @@
   </picture>
 </p>
 
-# Publish with chat
+<p align="center"><strong>Your website, made by asking.</strong><br>
+Tell Claude, ChatGPT or Gemini about your business. It builds the site, you check the preview, and it goes online at your own web address.</p>
 
-Describe a website to your chatbot, and it builds it, checks it, and puts it online. Works with Claude, ChatGPT and Gemini.
+<p align="center">
+  <a href="https://publishwith.chat">Website</a> ·
+  <a href="docs/connect.md">Add it to your chatbot</a> ·
+  <a href="docs/prompts.md">Prompts</a> ·
+  <a href="docs/troubleshooting.md">Troubleshooting</a> ·
+  <a href="brand/">Brand pack</a>
+</p>
 
-**Website:** https://publishwith.chat  
-**Connector address:** `https://api.publishwith.chat/mcp`  
-**Support:** support@publishwith.chat
+<p align="center">
+  <img alt="The Publish with chat home page: a chat asking for a bakery website, and the finished site beside it" src="docs/screenshots/home-desktop.png" width="800">
+</p>
 
-## What it does
+## How it works
 
-1. You ask your chatbot for a website: "Make me a website for my bakery, with a menu and opening hours."
-2. The chatbot builds the pages and sends them to Publish with chat.
-3. Publish with chat checks them for errors and gives you a free preview link that lasts 48 hours.
-4. When you are happy, you sign in and the site goes online at its own address. A custom domain can be connected too.
-5. Later, ask the chatbot to change text, photos or pages. Every update is kept as a version you can switch back to.
+1. **Add it once.** Paste the connector address into your chatbot. It takes about a minute.
+2. **Ask for a website.** "Make me a website for my bakery, with a menu and opening hours."
+3. **Check the preview.** Publish with chat checks the pages for errors and gives you a free preview link that lasts 48 hours.
+4. **Put it online.** When you are happy, you sign in and the site goes live at its own address. You can connect your own domain too.
+5. **Change it any time.** Ask the chatbot to change text, photos or pages. Every update is kept as a version you can switch back to.
 
 Good for brochure sites, portfolios, menus, landing pages and event pages. Sites are static: no server code and no databases.
 
 ## Add it to your chatbot
 
-You only do this once. Copy the connector address above, then:
+Connector address (the same for every chatbot):
 
-**Claude**
-1. Open claude.ai, then Settings, then Connectors.
-2. Choose to add a custom connector. Name it "Publish with chat" and paste the address.
-3. Turn on sign in when needed if you want Claude to change sites you already made.
-4. Start a new chat with Publish with chat switched on.
+```
+https://api.publishwith.chat/mcp
+```
 
-**ChatGPT**
-1. Open Settings and find Apps or Connectors.
-2. Add a custom connector (it may say MCP server) and paste the address.
-3. Choose OAuth if you want ChatGPT to change sites you already made.
-4. Start a new chat and mention Publish with chat.
+| Chatbot | Where to add it |
+|---|---|
+| Claude | Settings, Connectors, add custom connector |
+| ChatGPT | Settings, Apps or Connectors, add custom connector |
+| Gemini | gemini.google.com/devmode, create a new app |
 
-**Gemini**
-1. Turn on Gemini Apps Activity in your Google account. Without it the connection fails.
-2. Open gemini.google.com/devmode, create a new app, paste the address and save.
-3. In a chat, type `@Publish With Chat` and ask for your site. If it pauses, tell it to carry on.
+Full steps for each, with the small things that trip people up, are in [docs/connect.md](docs/connect.md). Menus change often, so the names above are a guide.
 
-Menus change often, so the names above are a guide. Step-by-step pages with screenshots are at https://publishwith.chat/connect.
+<p align="center">
+  <img alt="The Get started page, with the connector address and steps for each chatbot" src="docs/screenshots/connect-desktop.png" width="640">
+</p>
 
-## Try this
+## Then ask
 
 ```
 Make me a website for [your business name]. Include [what you want, like a menu,
@@ -54,39 +58,42 @@ opening hours, contact details and a map]. Use my attached logo and photos exact
 as they are. Publish it with Publish with chat and give me the preview link.
 ```
 
-More ideas:
-- `@Publish with chat build a one-page website for my plumbing business and show me a preview`
-- `@Publish with chat change my opening hours and publish the update`
-- `Switch my site back to the version from yesterday`
+More ideas, and what to tell the chatbot for a better first preview, are in [docs/prompts.md](docs/prompts.md).
 
 ## What the connector can do
 
 | Area | What you can ask for |
 |---|---|
-| Build | Create a site from text, upload images, import files from a web address, get a preview link |
+| Build | Create a site from text, add images and files, get a preview link |
 | Go live | Check progress and put a previewed site online once your account is set up |
 | Change | Edit text, images and pages on a site you own |
 | Undo | List versions and switch back to an earlier one |
 
-Tools that change or replace a live site are marked as such, so your chatbot asks before using them.
+Tools that change or replace a live site are marked as such, so your chatbot asks you first.
 
 ## Privacy and safety
 
 - We store the website files you give us and your email address. Payments are handled by Stripe and we never see card numbers.
-- Uploads are checked for harmful content. Every site and preview has a report link.
+- Uploads are checked for harmful content, and every site and preview has a report link.
 - You can export your data and delete your sites or account at any time.
-- Privacy policy: https://app.publishwith.chat/privacy
-- Terms: https://app.publishwith.chat/terms
+- [Privacy policy](https://app.publishwith.chat/privacy) and [terms](https://app.publishwith.chat/terms).
+- Found a security problem? See [SECURITY.md](SECURITY.md).
 
-## Brand
+## In this repository
 
-Logos and icons are in the brand pack. Please keep the logo unaltered and give it clear space. For anything else, email support@publishwith.chat.
+| Folder | What is in it |
+|---|---|
+| [`docs/`](docs/) | Guides: connecting each chatbot, prompts, troubleshooting, screenshots |
+| [`brand/`](brand/) | Logos, icons, social images and banners, with usage notes |
+| [`scripts/`](scripts/) | A script that re-captures the screenshots from the live site |
 
-## About this repository
+The service itself is not open source. This repository is where we keep the public guides and assets.
 
-This repository holds the public information about Publish with chat: this guide, brand assets and, over time, skills that help chatbots build better sites. The service itself is not open source.
+## Help and feedback
 
-Found a problem or have an idea? Open an issue here or email support@publishwith.chat.
+- Something not working, or a chatbot we have not listed? [Open an issue](https://github.com/publishwithchat/publishwithchat/issues/new/choose).
+- Want to improve a guide? See [CONTRIBUTING.md](CONTRIBUTING.md).
+- Anything else: support@publishwith.chat.
 
 ---
 

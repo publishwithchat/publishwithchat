@@ -1,0 +1,28 @@
+name: Chatbot report
+description: Tell us whether Publish with chat worked in a chatbot or plan we have not listed.
+labels: ["compatibility"]
+body:
+  - type: input
+    id: chatbot
+    attributes:
+      label: Chatbot and plan
+      placeholder: "For example: Grok, paid plan"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Did it work?
+      options:
+        - Yes, all of it
+        - Partly
+        - No
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How did you add it, and what happened?
+      description: The menu names you used help us update the guide.
+    validations:
+      required: true

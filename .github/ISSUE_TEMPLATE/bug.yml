@@ -1,0 +1,35 @@
+name: Something is not working
+description: The connector, a preview or a guide did not do what it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us. Please do not include passwords, private links or personal details.
+  - type: dropdown
+    id: chatbot
+    attributes:
+      label: Which chatbot were you using?
+      options:
+        - Claude
+        - ChatGPT
+        - Gemini
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you ask for, and what did the chatbot or Publish with chat do?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: input
+    id: preview
+    attributes:
+      label: Preview link (optional)
+      description: Only if it helps. Preview links expire after 48 hours.

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Re-capture the screenshots in docs/screenshots from the live site.
-# Needs Google Chrome on macOS. Run from the repo root: scripts/capture-screenshots.sh
+# Uses reduced motion so the animated home page shows its finished state. Needs Google Chrome on macOS. Run from the repo root: scripts/capture-screenshots.sh
 set -euo pipefail
 
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
@@ -9,7 +9,7 @@ mkdir -p "$OUT"
 
 shot() { # name url width,height
   "$CHROME" --headless=new --disable-gpu --hide-scrollbars \
-    --force-device-scale-factor=1 --virtual-time-budget=6000 \
+    --force-device-scale-factor=1 --force-prefers-reduced-motion --virtual-time-budget=6000 \
     --window-size="$3" --screenshot="$PWD/$OUT/$1.png" "$2" >/dev/null 2>&1
   echo "saved $OUT/$1.png"
 }

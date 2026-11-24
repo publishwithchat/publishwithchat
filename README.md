@@ -44,7 +44,7 @@ https://api.publishwith.chat/mcp
 | ChatGPT | Settings, Apps or Connectors, add custom connector |
 | Gemini | gemini.google.com/devmode, create a new app |
 
-Full steps for each, with the small things that trip people up, are in [docs/connect.md](docs/connect.md). Menus change often, so the names above are a guide.
+Full steps for each, with the small things that trip people up, are in [docs/connect.md](docs/connect.md). Other apps that support MCP are covered in [docs/works-with.md](docs/works-with.md). Menus change often, so the names above are a guide.
 
 <p align="center">
   <img alt="The Get started page, with the connector address and steps for each chatbot" src="docs/screenshots/connect-desktop.png" width="640">

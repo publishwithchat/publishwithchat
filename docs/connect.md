@@ -32,9 +32,9 @@ Menus change often, so the names below are a guide. Some chatbots only let you a
 3. In a chat, type `@Publish With Chat` and ask for your site.
 4. Gemini stops after a few steps. If it pauses, tell it to carry on.
 
-## Other chatbots
+## Other apps
 
-Grok and Perplexity can also add connectors like this on paid plans, using the same address. We have tested Claude, ChatGPT and Gemini, and not yet those two.
+Publish with chat uses the open MCP standard, so other apps that support it may let you add the connector too. We have tested Claude, ChatGPT and Gemini. Steps for Grok, Perplexity, Le Chat, Replit, v0 and developer tools such as Claude Code, Codex, Cursor and VS Code are in [works-with.md](works-with.md). We have not tested those yet.
 
 ## Next
 

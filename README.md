@@ -17,6 +17,11 @@ Tell Claude, ChatGPT or Gemini about your business. It builds the site, you chec
 </p>
 
 <p align="center">
+  <a href="https://mcptry.com/servers/chat.publishwith/publish-with-chat"><img alt="mcptry status and score" src="https://mcptry.com/badge/chat.publishwith/publish-with-chat"></a>
+  <a href="https://glama.ai/mcp/connectors/chat.publishwith/publish-with-chat"><img alt="Publish with chat MCP connector on Glama" src="https://glama.ai/mcp/connectors/chat.publishwith/publish-with-chat/badges/score.svg"></a>
+</p>
+
+<p align="center">
   <img alt="The Publish with chat home page: a chat asking for a bakery website, and the finished site beside it" src="docs/screenshots/home-desktop.png" width="800">
 </p>
 
